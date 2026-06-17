@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .b1 {
+            text-decoration: underline;
+        }
+
+        table {
+            border: 1px solid;
+        }
+
+        section {
+            margin: auto;
+            width: 40%
+        }
+
+        body {
+            background: radial-gradient(brown, rgba(0, 0, 255, 0.735), aqua, gray);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p id="d1">MOVIE TICKET BOOKING</p>
+        <section>
+            <form action="">
+                <table cellspacing="10px" cellpadding="5px">
+                    <tr>
+                        <td><b class="b1">Customer Details</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Full Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="name" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Email</label></td>
+                        <td>:</td>
+                        <td><input type="email" name="mail" id="mail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phno">Phone Number</label></td>
+                        <td>:</td>
+                        <td><input type="number" name="phno" id="phno" required></td>
+                    </tr>
+                    <tr>
+                        <td><b class="b1">Movie Details</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="movie">Select Movie</label></td>
+                        <td>:</td>
+                        <td>
+                            <select name="movie" id="movie" required>
+                                <option value="">--select--</option>
+                                <option value="kalki">Kalki</option>
+                                <option value="salaar">Salaar</option>
+                                <option value="radha shyam">Radha Shyam</option>
+                                <option value="bahubali">Bahubali</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Date">Date</label></td>
+                        <td>:</td>
+                        <td><input type="date" name="Date" id="Date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="show time">Show Time</label></td>
+                        <td>:</td>
+                        <td><input type="time" name="show time" id="show time" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="theater">Theater</label></td>
+                        <td>:</td>
+                        <td>
+                            <select name="theater" id="theater" required>
+                                <option value="">--select--</option>
+                                <option value="AMB Cinemas">AMB Cinemas</option>
+                                <option value="PVR ICON">PVR ICON</option>
+                                <option value="INOX (GVK One Mall)">INOX (GVK One Mall)</option>
+                                <option value="Prasads Multiplex">Prasads Multiplex</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b class="b1">Seat Selection</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Seat Type">Seat Type</label></td>
+                        <td>:</td>
+                        <td><input type="radio" name="Seat Type" id="Seat Type" required><label>Regular</label>
+                            <input type="radio" name="Seat Type" id="Seat Type"><label>Premium</label>
+                            <input type="radio" name="Seat Type" id="Seat Type"><label>VIP</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="no.of seats">Number Of Seats</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="no.of seats" id="no.of seats" required></td>
+                    </tr>
+                    <tr>
+                        <td><b class="b1">Food & Beverages (optional)</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="food" id="food"><label for="food">Popcorn</label></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="food" id="food"><label for="food">Soft Drink</label></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="food" id="food"><label for="food">Combo Meal </label></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><b class="b1">Payment Details</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Payment Method">Payment Method</label></td>
+                        <td>:</td>
+                        <td><input type="radio" name="Payment Method" id="Payment Method"
+                                required><label>UPI</label><br>
+                            <input type="radio" name="Payment Method" id="Payment Method"><label>Credit Card</label><br>
+                            <input type="radio" name="Payment Method" id="Payment Method"><label>Debit
+                                Card</label><br><input type="radio" name="Payment Method" id="Payment Method"><label>Net
+                                Banking</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset"
+                                style="color: white; background-color: rgba(66, 59, 59, 0.84); border-radius: 4px;padding: 7px;margin-left: 40px; ">
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Book Ticket"
+                                style="padding: 7px;border-radius: 4px; color: white;background-color: rgb(29, 29, 235); margin-left: 20px;">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
