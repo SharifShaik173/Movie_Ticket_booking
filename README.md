@@ -71,7 +71,7 @@ No installations or dependencies needed — it's pure HTML & CSS!
  
 ## 🙋 Author
  
-**Your Name**
+**My Name**
 - GitHub: [@Sharif](https://github.com/SharifShaik173)
 ---
  
